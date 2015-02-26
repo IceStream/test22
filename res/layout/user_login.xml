@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="49dp"
+        android:layout_marginTop="94dp"
+        android:text="用户名" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_below="@+id/userLogin_name_editText1"
+        android:layout_marginTop="47dp"
+        android:text="密码" />
+
+    <EditText
+        android:id="@+id/userLogin_name_editText1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView1"
+        android:layout_alignBottom="@+id/textView1"
+        android:layout_alignParentRight="true"
+        android:ems="10"
+        android:hint="用户名" />
+
+    <EditText
+        android:id="@+id/userLogin_pwd_editText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView2"
+        android:layout_alignParentRight="true"
+        android:ems="10"
+        android:hint="密码6~12" >
+
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/userLogin_login_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView2"
+        android:layout_marginTop="36dp"
+        android:layout_toLeftOf="@+id/userLogin_pwd_editText"
+        android:text="登录" />
+
+    <Button
+        android:id="@+id/userLogin_regist_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/userLogin_login_btn"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="38dp"
+        android:text="注册" />
+  
+</RelativeLayout>
